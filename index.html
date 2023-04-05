@@ -1,30 +1,100 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Pablo Gila-Herranz</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <style>
+      body {
+        background-image: url("pics/background.jpg");
+        background-size: cover;
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        text-align: center;
+        margin: 0;
+      }
+      h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 5rem;
+        margin-top: 5rem;
+        position: relative;
+      }
+      h1::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      h2 {
+        font-size: 2rem;
+        position: relative;
+      }
+      h2::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+      .profile-pic {
+        margin-top: 2rem;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+      .social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3rem;
+      }
+      .social a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+        font-size: 2rem;
+        color: #fff;
+        text-decoration: none;
+      }
+      .social a span {
+        margin-left: 1rem;
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
-    <!--    links antiguos
-    <a rel="me" href="https://spore.social/@pablogilah">Mastodon</a>
-    <a rel="me" href="https://twitter.com/pablogilah">Twitter</a>
-      
-    <a target = "blank" href='https://www.instagram.com/pablogila'><i class='fab fa-instagram'></i></a>
-    <a target = "blank" href = 'https://www.youtube.com/@pablogilah'><i class="fab fa-youtube"></i></a>
-
-    -->
-    <div class="row social" align="center">
-      <a target = "blank" href='https://twitter.com/pablogilah' ><i class="fab fa-twitter"></i></a>
-        <!--
-        <style>
-          i.size {
-            font-size: 100px;
-          }
-        </style>
-        -->
-      <a target = "blank" rel="me" href="https://spore.social/@pablogilah"><i class="fab fa-mastodon"></i></a>
-      <a target = "blank" href='https://www.tiktok.com/@pablogilah'><i class='fab fa-tiktok'></i></a>
-
+    <h1>Pablo Gila-Herranz</h1>
+    <img class="profile-pic" src="pics/profile.jpg" alt="Profile picture">
+    <h2>Puedes encontrarme en estos sitios :D</h2>
+    <div class="social">
+      <a target="_blank" href="https://twitter.com/pablogilah"><span class="iconify" data-icon="fa-brands:twitter"></span> Twitter</a>
+      <a target="_blank" href="https://www.tiktok.com/@pablogilah"><span class="iconify" data-icon="simple-icons:tiktok"></span> TikTok</a>
+      <a target="_blank" rel="me" href="https://spore.social/@pablogilah"><span class="iconify" data-icon="fa-brands:mastodon"></span> Mastodon</a>
+      <a target="_blank" href="https://github.com/pablogila"><span class="iconify" data-icon="fa-brands:github"></span> GitHub</a>
     </div>
   </body>
 </html>
