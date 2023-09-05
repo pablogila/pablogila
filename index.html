@@ -56,9 +56,19 @@
       }
       .social {
         display: flex;
-        flex-direction: column;
+        <!-- flex-direction: column; -->
         align-items: center;
         margin-top: 2rem;
+        column-count: 2;
+        column-width: 50%;
+      }
+      .social-left {
+        float: left;
+        width: 50%;
+      }
+      .social-right {
+        float: right;
+        width: 50%;
       }
       .social a {
         display: flex;
@@ -85,6 +95,9 @@
         justify-content: center;
         align-items: center;
       }
+      .separador {
+        margin-bottom: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -92,13 +105,20 @@
     <img class="profile-pic" src="pics/profile.jpg" alt="Profile picture">
     <h2>Puedes encontrarme en estos sitios :D</h2>
     <div class="social">
-      <a target="_blank" href="https://twitter.com/pablogilah"><span class="iconify" data-icon="fa-brands:twitter"></span>&nbsp;Twitter</a>
-      <a target="_blank" rel="me" href="https://spore.social/@pablogilah"><span class="iconify" data-icon="fa-brands:mastodon"></span>&nbsp;Mastodon</a>
-      <a target="_blank" href="https://bsky.app/profile/pablogilah.bsky.social"><span class="iconify" data-icon="mdi:cloud"></span>&nbsp;Bluesky</a>
-      <a target="_blank" href="https://www.tiktok.com/@pablogilah"><span class="iconify" data-icon="simple-icons:tiktok"></span>&nbsp;TikTok</a>
-      <a target="_blank" href="https://twitter.com/GilaPixel"><span class="iconify" data-icon="fa-brands:twitter"></span>&nbsp;Twitter &lpar;arte&rpar;</a>
-      <a target="_blank" href="https://gilapixel.itch.io/"><span class="iconify" data-icon="simple-icons:itchdotio"></span>&nbsp;Itch.io</a>
-      <a target="_blank" href="https://github.com/pablogila"><span class="iconify" data-icon="fa-brands:github"></span>&nbsp;GitHub</a>
+      <div class="social-left">
+        <a target="_blank" href="https://twitter.com/pablogilah"><span class="iconify" data-icon="fa-brands:twitter"></span>&nbsp;Twitter</a>
+        <a target="_blank" href="https://bsky.app/profile/pablogilah.bsky.social"><span class="iconify" data-icon="mdi:cloud"></span>&nbsp;Bluesky</a>
+        <a target="_blank" rel="me" href="https://spore.social/@pablogilah"><span class="iconify" data-icon="fa-brands:mastodon"></span>&nbsp;Mastodon</a>
+        <a target="_blank" href="https://www.tiktok.com/@pablogilah"><span class="iconify" data-icon="simple-icons:tiktok"></span>&nbsp;TikTok</a>
+      </div>
+      <div class="social-right">
+        <a target="_blank" href="https://twitter.com/GilaPixel"><span class="iconify" data-icon="fa-brands:twitter"></span>&nbsp;Twitter &lpar;arte&rpar;</a>
+        <a target="_blank" href="https://gilapixel.itch.io/"><span class="iconify" data-icon="simple-icons:itchdotio"></span>&nbsp;Itch.io</a>
+
+        <p class="separador"></p>
+
+        <a target="_blank" href="https://github.com/pablogila"><span class="iconify" data-icon="fa-brands:github"></span>&nbsp;GitHub</a>
+      </div>
     </div>
   </body>
 </html>
