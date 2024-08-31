@@ -11,11 +11,15 @@
       body {
         background-image: url("pics/background.jpg");
         background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
         font-family: 'Open Sans', sans-serif;
         font-size: 4vw;
         color: #fff;
         text-align: center;
-        margin: 5vw;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
       }
       h1 {
         font-family: 'Montserrat', sans-serif;
@@ -114,6 +118,15 @@
           font-size: 2vw;
           padding: 0.5vw 1vw;
           margin: 0.5vw;
+        }
+      }
+
+      /* Media query for smaller screens (Mobile version) */
+      @media (max-width: 1024px) {
+        .social a {
+          font-size: 6vw;
+          padding: 2vw 4vw;
+          margin: 2vw;
         }
       }
     </style>
