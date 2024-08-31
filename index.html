@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pablo Gila-Herranz</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -11,14 +12,14 @@
         background-image: url("pics/background.jpg");
         background-size: cover;
         font-family: 'Open Sans', sans-serif;
-        font-size: 5rem;
+        font-size: 4vw;
         color: #fff;
         text-align: center;
-        margin: 5rem;
+        margin: 5vw;
       }
       h1 {
         font-family: 'Montserrat', sans-serif;
-        font-size: 5rem;
+        font-size: 6vw;
         position: relative;
       }
       h1::after {
@@ -33,7 +34,7 @@
         z-index: -1;
       }
       h2 {
-        font-size: 3rem;
+        font-size: 5vw;
         position: relative;
       }
       h2::after {
@@ -48,39 +49,32 @@
         z-index: -1;
       }
       .profile-pic {
-        margin-top: 2rem;
-        border-radius: 50%;
-        width: 300px;
-        height: 300px;
+        margin-top: 0vw;
+        border-radius: 20%;
+        width: 30vw;
+        height: 30vw;
         object-fit: cover;
       }
       .social {
         display: flex;
+        flex-direction: column;
         align-items: center;
-        margin-top: 2rem;
-        column-count: 2;
-        column-width: 50%;
-      }
-      .social-left {
-        float: left;
-        width: 50%;
-      }
-      .social-right {
-        float: right;
-        width: 50%;
+        margin-top: 0vw;
       }
       .social a {
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 3rem;
-        font-size: 3rem;
+        margin: 1vw;
+        font-size: 4vw;
+        padding: 1vw 2vw;
         color: #fff;
         text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 1vw;
       }
-      .social a span {
-        margin-left: 1rem;
-        margin-right: 1rem;
+      .social a .iconify {
+        margin-right: 1vw;
       }
       .overlay {
         background-color: rgba(0, 0, 0, 0.3);
@@ -95,26 +89,45 @@
         align-items: center;
       }
 
+      /* Media query for larger screens (PC version) */
+      @media (min-width: 1024px) {
+        body {
+          font-size: 1.5vw;
+          margin: 2vw;
+        }
+        h1 {
+          font-size: 3vw;
+        }
+        h2 {
+          font-size: 2vw;
+        }
+        .profile-pic {
+          width: 10vw;
+          height: 10vw;
+        }
+        .social {
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        .social a {
+          font-size: 2vw;
+          padding: 0.5vw 1vw;
+          margin: 0.5vw;
+        }
+      }
     </style>
   </head>
   <body>
     <h1>Pablo Gila-Herranz</h1>
     <img class="profile-pic" src="pics/profile.jpg" alt="Profile picture">
-    <h2>Puedes encontrarme en estos sitios &nbsp;:D</h2>
+    <h2>Puedes encontrarme <br> en estos sitios &nbsp;:D</h2>
     <div class="social">
-      <div class="social-left">
-        <a target="_blank" href="https://twitter.com/pablogilah"><span class="iconify" data-icon="fa-brands:twitter"></span>&nbsp;Twitter</a>
-        <a target="_blank" rel="me" href="https://spore.social/@pablogilah"><span class="iconify" data-icon="fa-brands:mastodon"></span>&nbsp;Mastodon</a>
-        <a target="_blank" href="https://bsky.app/profile/pablogilah.bsky.social"><span class="iconify" data-icon="mdi:cloud"></span>&nbsp;Bluesky</a>
-        <a target="_blank" href="https://www.tiktok.com/@pablogilah"><span class="iconify" data-icon="simple-icons:tiktok"></span>&nbsp;TikTok</a>
-      </div>
-      <div class="social-right">
-        <a target="_blank" href="https://github.com/pablogila"><span class="iconify" data-icon="fa-brands:github"></span>&nbsp;GitHub</a>
-        <a target="_blank" href="https://twitter.com/GilaPixel"><span class="iconify" data-icon="fa-brands:twitter"></span>&nbsp;Twitter (Art)</a>
-        <a target="_blank" href="https://www.instagram.com/gilapixel/"><span class="iconify" data-icon="simple-icons:instagram"></span>&nbsp;Insta (Art)</a>
-        <a target="_blank" href="https://gilapixel.itch.io/"><span class="iconify" data-icon="simple-icons:itchdotio"></span>&nbsp;Itch.io (Art)</a>
-        <!-- <a target="_blank" <span></span> &nbsp;</a> -->
-      </div>
+      <a target="_blank" rel="me" href="https://masto.es/@pablogilah"><span class="iconify" data-icon="fa-brands:mastodon"></span>Mastodon</a>
+      <a target="_blank" href="https://twitter.com/pablogilah"><span class="iconify" data-icon="fa-brands:twitter"></span>Twitter</a>
+      <a target="_blank" href="https://www.tiktok.com/@pablogilah"><span class="iconify" data-icon="simple-icons:tiktok"></span>TikTok</a>
+      <a target="_blank" href="https://github.com/pablogila"><span class="iconify" data-icon="fa-brands:github"></span>GitHub</a>
+      <a target="_blank" href="gilapixel.html"><span class="iconify" data-icon="mdi:dots-horizontal"></span>Art & GameDev</a>
     </div>
   </body>
 </html>
